@@ -1,0 +1,94 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+#first {
+  margin-bottom: 1em;
+  color: #555;
+  text-align: center;
+}
+
+/* Container for the input and button */
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40%; /* You can adjust this value to your liking */
+}
+
+input[type="text"] {
+  padding: 10px;
+  flex-grow: 1; /* Takes up the remaining space */
+  border: 2px solid #333;
+  margin-right: 10px; /* Space between input and button */
+}
+
+button {
+  padding: 10px 20px;
+  border: 2px solid #333;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 25%; /* Keep consistent with the input container width */
+  text-align: center;
+}
+
+li {
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.delete {
+  padding: 5px 10px;
+  background-color: #ff6347;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: #ff4437;
+}
+
+.todo-text {
+  flex-grow: 1; /* Allows the text to fill the space, pushing the delete button to the end */
+  padding-right: 10px; /* Adds some space between text and delete button */
+}
+
+.done {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+#items:hover {
+  cursor: pointer;
+}
